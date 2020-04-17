@@ -1,0 +1,10 @@
+version: "3"
+services:
+  aws-shell:
+    build: ./aws-shell
+    environment:
+      AWS_ACCESS_KEY_ID:
+      AWS_SECRET_ACCESS_KEY:
+      AWS_SESSION_TOKEN:
+    volumes:
+      - ~/.aws:/root/.aws
